@@ -3,6 +3,110 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*Setup Main Color Style*/
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
 header nav {
-  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0 70px 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgba(140, 210, 250, 1);
+  text-shadow: 1px 1px rgba(140, 210, 250, 0.7);
+  font-size: 20px;
+}
+
+header nav h1 {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header nav h1 span {
+  margin-left: 30px;
+}
+
+.main-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+.main-hero h2 {
+  font-size: 100px;
+  color: rgb(175, 175, 175);
+  margin: 20px 20px 20px 40px;
+  flex: 8;
+}
+
+.main-hero div {
+  flex: 1 50%;
+  display: flex;
+  flex-wrap: none;
+  justify-content: left;
+  align-content: center;
+}
+
+.main-hero div img {
+  border-radius: 50%;
+  flex: 10%;
+  margin: 0 20px 0 70px;
+}
+
+.main-hero div p {
+  font-size: 18px;
+  margin: auto 40px;
+}
+
+.drive {
+  flex-direction: row-reverse;
+}
+
+.drive h2 {
+  text-align: right;
+  margin: 20px 40px 20px 20px;
+  flex: 2;
+}
+
+.drive img {
+  margin: 0 70px 0 20px;
+}
+
+.project-title {
+  font-size: 100px;
+  color: rgb(175, 175, 175);
+  text-align: center;
+  margin: 0 auto 40px auto;
+  border-bottom: 2px solid rgb(175, 175, 175);
+  width: 30%;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects a img {
+  height: 400px;
+  width: 800px;
+  margin: 20px 0;
+}
+
+.projects :first-child img {
+  width: 1100px;
+  height: 600px;
 }
