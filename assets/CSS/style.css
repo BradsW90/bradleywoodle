@@ -13,12 +13,14 @@ body {
 header {
   position: sticky;
   top: 0;
+  background-color: black;
+  z-index: 9999;
 }
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0 70px 0;
+  padding: 20px 0 20px 0;
 }
 
 header nav a {
@@ -42,6 +44,7 @@ header nav h1 span {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 200px;
+  margin-top: 50px;
 }
 
 .main-hero h2 {
@@ -61,7 +64,7 @@ header nav h1 span {
 
 .main-hero div img {
   border-radius: 50%;
-  flex: 10%;
+  flex: 10;
   margin: 0 20px 0 70px;
 }
 
@@ -82,6 +85,7 @@ header nav h1 span {
 
 .drive img {
   margin: 0 70px 0 20px;
+  border-radius: 100px;
 }
 
 .project-title {
@@ -102,11 +106,68 @@ header nav h1 span {
 
 .projects a img {
   height: 400px;
-  width: 800px;
+  width: 700px;
   margin: 20px 0;
 }
 
 .projects :first-child img {
   width: 1100px;
   height: 600px;
+}
+
+.projects a:before {
+  content: "";
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  font-size: 100px;
+  text-align: center;
+  opacity: 0;
+  height: 280px;
+  width: 700px;
+  padding-top: 140px;
+  z-index: 0;
+}
+
+.projects a:hover::before {
+  content: "Coming Soon";
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.projects :nth-child(2):hover::before {
+  content: "Horiseon";
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.projects :first-child::before {
+  content: "";
+  position: absolute;
+  width: 1100px;
+  height: 400px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  font-size: 100px;
+  text-align: center;
+  padding: 220px 0 0 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+.projects :first-child:hover::before {
+  content: "Run Buddy Project";
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 575px) {
 }
