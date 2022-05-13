@@ -5,10 +5,13 @@
 }
 
 /*Setup Main Color Style*/
+
 body {
   background-color: black;
   color: white;
 }
+
+/*set stuck nav*/
 
 header {
   position: sticky;
@@ -16,6 +19,9 @@ header {
   background-color: black;
   z-index: 9999;
 }
+
+/*nav deco start*/
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -38,8 +44,9 @@ header nav h1 {
 
 header nav h1 span {
   margin-left: 30px;
-}
+} /*nav deco end*/
 
+/*section one styles start*/
 .main-hero {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +80,9 @@ header nav h1 span {
 .main-hero div p {
   font-size: 1.125em;
   margin: auto 40px;
-}
+} /*section one styles end*/
+
+/*section two styles start*/
 
 .drive {
   flex-direction: row-reverse;
@@ -94,7 +103,9 @@ header nav h1 span {
   flex: 0 1 15%;
   height: 500px;
   width: 500px;
-}
+} /*section two styles end*/
+
+/*project styles start*/
 
 .project-title {
   font-size: 6.25em;
@@ -119,11 +130,15 @@ header nav h1 span {
   margin: 20px 0;
 }
 
+/*making first project bigger*/
+
 .projects :first-child img {
   width: 1200px;
   height: 600px;
   flex: 1 100%;
 }
+
+/*setup for hover and project title*/
 
 .projects a:before {
   content: "";
@@ -140,17 +155,23 @@ header nav h1 span {
   z-index: 0;
 }
 
+/*hover for future projects*/
+
 .projects a:hover::before {
   content: "Coming Soon";
   opacity: 1;
   transition: opacity 1s;
 }
 
+/*set project 2 hover title*/
+
 .projects :nth-child(2):hover::before {
   content: "Horiseon";
   opacity: 1;
   transition: opacity 1s;
 }
+
+/*setup for hover/title*/
 
 .projects :first-child::before {
   content: "";
@@ -167,11 +188,15 @@ header nav h1 span {
   z-index: 0;
 }
 
+/*set project one hover title*/
+
 .projects :first-child:hover::before {
   content: "Run Buddy Project";
   opacity: 1;
   transition: opacity 1s;
-}
+} /*project styles end*/
+
+/*most changes to mobile responsive was resizing with little positioning changes*/
 
 @media screen and (max-width: 980px) {
   :root {

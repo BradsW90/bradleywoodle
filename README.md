@@ -4,9 +4,9 @@
 
 This website is a collection of my work, links, and as well as a show of my heart, soul, and passion.
 
-- add technologies used
+- used HTML and CSS
 
-- add challenges faced and future features
+- The big problem i faced was figuring out how Chrome dev tools was displaying the mobile versions, so instead i put noticable css changes in and resized the window to test the responsivness, then altered my code to display the intended result.
 
 ### Story and Requirments
 
