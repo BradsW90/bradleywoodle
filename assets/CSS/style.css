@@ -171,6 +171,12 @@ header nav h1 span {
   transition: opacity 1s;
 }
 
+.projects :nth-child(3):hover::before {
+  content: "Buzzed Rocket";
+  opacity: 1;
+  transition: opacity 1s;
+}
+
 /*setup for hover/title*/
 
 .projects :first-child::before {
